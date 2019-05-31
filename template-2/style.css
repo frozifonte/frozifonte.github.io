@@ -689,10 +689,10 @@ footer a:hover{
             font-size: 14px;
         }
         .contact__from .contact__wrapper{
-            width: 90%;
+            width: 80%;
         }
         .form__inputs {
-            min-width: 100%;
+            min-width: 90%;
             
             
         }
@@ -711,8 +711,9 @@ footer a:hover{
         .form__inputs p{
             font-size:30px;
         }
+        
         input:first-of-type{
-            padding-right:13%;
+            padding-right:3%;
         }
         textarea{
             font-size:25px;
@@ -741,15 +742,41 @@ footer a:hover{
             width: 85%;
             margin:0 auto;
         }
-       
+        input[type=submit]{
+            width: 300px;
+            height: 70px;
+        }
         
         
         
         
         
     }
-/*Mobile M 375px*/
-/*Mobile S 320px*/
+    
+    @media screen and (max-device-width:425px){
+        .topnav.responsive{
+            left:-420px;
+        }
+        .topnav a{
+            font-size:20px;
+        }
+        
+        .topnav.responsive a.icon{
+            right: -420px;
+        }
+        input[type=submit]{
+            width: 300px;
+            height: 70px;
+        }
+    }
+    
+    @media screen and (max-width:321px){
+       
+        .topnav a{
+            font-size:30px;
+        }
+    }
+
 
 
 
