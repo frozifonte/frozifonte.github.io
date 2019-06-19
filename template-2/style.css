@@ -320,20 +320,20 @@ margin-bottom: 100px;
 .contact__from h1{
     color:#222222;;   
     margin-bottom: 30px;
-    font-size: 44px;
+    font-size: 2.75em;
     font-weight: 400;
     line-height: 24px;
     
     
 }
 .paragraph{
-    font-size: 16px;
+    font-size: 1em;
     font-style: italic;
     line-height: 24px;
 }
 .contact__from{
     color:#6c6c6c;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
     line-height: 25px;
 }
@@ -364,7 +364,7 @@ input, textare{
 input{
     width:360px;
     height:40px;
-    font-size:20px;
+    font-size:1.25em;
     margin-bottom: 30px;
 }
 input:first-of-type{
