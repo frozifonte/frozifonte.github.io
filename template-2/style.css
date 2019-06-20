@@ -695,11 +695,11 @@ footer a:hover{
         main .main__welcome p {
             font-size: 14px;
         }
-        .contact__from .contact__wrapper{
+        .contact__wrapper{
             width: 80%;
         }
         .form__inputs {
-            min-width: 90%;
+            max-width: 100%;
             
             
         }
