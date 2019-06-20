@@ -440,14 +440,14 @@ footer a:hover{
 
 
 
-@media screen and (max-width:1105px){
+@media only screen and (max-width:1105px){
     nav{
         margin-left:10%;
     }
     
    
 
-@media screen and (max-width:1015px){
+@media only screen and (max-width:1015px){
     .topnav a{
         display:none;
     }
@@ -528,7 +528,7 @@ footer a:hover{
 }
 
 /*Laptop 1024px*/
-    @media screen and (min-width:1024px) and (max-width:1066px){
+    @media only screen and (min-width:1024px) and (max-width:1066px){
        .mw-100{
         max-width:100%;
     }
@@ -603,7 +603,8 @@ footer a:hover{
         }
     }
 /*Tablet 768px*/
-    @media screen and (min-width:768px) and (max-width:1023px){
+    
+    @media only screen and (min-width:768px) and (max-width:1023px){
         main .main__welcome {
             padding: 130px 0 100px 0;
             
@@ -682,7 +683,7 @@ footer a:hover{
         
     }
 /*Mobile L 425px*/
-    @media screen and (min-device-width:320px) and (max-device-width:767px){
+    @media only screen and (min-width:320px) and (max-width:767px){
         .header__logo{
             font-size: 50px;
             margin-left: 20px;
@@ -759,7 +760,7 @@ footer a:hover{
         
     }
     
-    @media screen and (max-device-width:425px){
+    @media only screen and (max-width:425px){
         .topnav.responsive{
             left:-420px;
         }
@@ -776,7 +777,7 @@ footer a:hover{
         }
     }
     
-    @media screen and (max-width:321px){
+    @media only screen and (max-width:321px){
        
         .topnav a{
             font-size:30px;
