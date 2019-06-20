@@ -219,7 +219,7 @@ h1:after{
     padding:100px 0 30px 0;
     font-size: 44px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5em;
     
 }
 .main__services p{
@@ -240,7 +240,7 @@ margin-bottom: 100px;
     color: #ffffff;
     font-size: 44px;
     font-weight: 100;
-    line-height: 24px;  
+    line-height: 1.5em;  
 }
 
 
@@ -262,7 +262,7 @@ margin-bottom: 100px;
 .main__testimonials h1{
     font-size: 44px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5em;
 }
 
 .main__work{
@@ -276,7 +276,7 @@ margin-bottom: 100px;
     color: #222222;
     font-size: 44px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5em;
 }
 
 .main__work p{
@@ -322,7 +322,7 @@ margin-bottom: 100px;
     margin-bottom: 30px;
     font-size: 2.75em;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5em;
     
     
 }
