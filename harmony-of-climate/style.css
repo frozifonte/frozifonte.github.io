@@ -39,6 +39,10 @@ body{
 
 header{
     display: grid;
+    -webkit-grid-template-columns: 60% 40%;
+    -moz-grid-template-columns: 60% 40%;
+    -o-grid-template-columns: 60% 40%;
+    -ms-grid-template-columns: 60% 40%;
     grid-template-columns: 60% 40%;
     box-sizing: border-box;
 }
@@ -48,6 +52,10 @@ header{
 }
 .header__right_side{
     display: flex;
+    -ms-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -moz-justify-content: space-between;
     justify-content: space-between;
 }
 .header__left_side img{
@@ -89,6 +97,10 @@ header{
 
 main{
    display: grid;
+    -ms-grid-template-columns: 25% 75%;
+    -webkit-grid-template-columns: 25% 75%;
+    -moz-grid-template-columns: 25% 75%;
+    -o-grid-template-columns: 25% 75%;
     grid-template-columns: 25% 75%;
      box-sizing: border-box;
     position: relative;
@@ -217,6 +229,10 @@ aside{
 
 .producers_logos{
         display: grid;
+    -webkit-grid-template-columns: auto auto;
+    -ms-grid-template-columns: auto auto;
+    -moz-grid-template-columns: auto auto;
+    -o-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
     padding: 0.07142857142em 0 1.14285714286em 0;
     }
