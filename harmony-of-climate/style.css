@@ -38,6 +38,10 @@ body{
 
 
 header{
+   -moz-display: grid;
+    -webkit-display: grid;
+    -ms-display: grid;
+    -o-display: grid;
     display: grid;
     -webkit-grid-template-columns: 60% 40%;
     -moz-grid-template-columns: 60% 40%;
@@ -47,10 +51,18 @@ header{
     box-sizing: border-box;
 }
 .header__left_side{
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
     display: flex;
     justify-content: space-between;
 }
 .header__right_side{
+    -webkit-display: flex;
+    -ms-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
     display: flex;
     -ms-justify-content: space-between;
     -webkit-justify-content: space-between;
@@ -96,6 +108,10 @@ header{
 }
 
 main{
+    -moz-display: grid;
+    -webkit-display: grid;
+    -ms-display: grid;
+    -o-display: grid;
    display: grid;
     -ms-grid-template-columns: 25% 75%;
     -webkit-grid-template-columns: 25% 75%;
@@ -228,6 +244,10 @@ aside{
 }
 
 .producers_logos{
+    -moz-display: grid;
+    -webkit-display: grid;
+    -ms-display: grid;
+    -o-display: grid;
         display: grid;
     -webkit-grid-template-columns: auto auto;
     -ms-grid-template-columns: auto auto;
@@ -258,9 +278,25 @@ aside{
     z-index:3;
 }
 ._line{
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -o-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
     justify-content: space-between;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
     align-items: center;
     
 }
@@ -277,6 +313,10 @@ aside{
 .content__wrapper{
     background: #fff;
     border-radius: 1em;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display:flex;
     padding: 0.625em 0.625em;
     margin: 0.625em 0.75em;
@@ -316,7 +356,15 @@ aside{
 }
 .content__text a{
     margin-top: 1.08333333333em;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -ms-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -o-justify-content: flex-end;
     justify-content: flex-end;
     color: #236583;
     font-family: Tahoma;
@@ -366,7 +414,17 @@ aside{
     font-size: 0.75em;
     font-weight: 400;
     text-decoration: underline;
+    
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -ms-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    
     justify-content: flex-end;
 }
 .about_us .link-about-us:hover{
@@ -388,7 +446,15 @@ h5{
     padding-left:1.5em; 
 }
 .gallery-top{
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
     justify-content: space-between;
     
 }
@@ -423,8 +489,16 @@ h5:hover{
 }
 .gallery_bottom{
     padding: 0.875em 0.875em 0.8125em 0.875em;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
-    justify-content: space-between;
+    -o-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content:space-between;
     
 }
 .gallery_bottom img{
@@ -438,7 +512,15 @@ h5:hover{
 
 
 footer ul{
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -o-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
    justify-content: space-between;
     text-align: center;
     
@@ -477,7 +559,15 @@ footer .sp{
     line-height: 36px;
 }
 small{
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
    justify-content: center;
 }
 footer{
@@ -555,7 +645,15 @@ footer{
     }
     
     .gallery_bottom{
+        -moz-display: grid;
+        -webkit-display: grid;
+        -o-display: grid;
+        -ms-display: grid;
         display: grid;
+        -o-grid-template-columns: 50% 50%;
+        -ms-grid-template-columns: 50% 50%;
+        -webkit-grid-template-columns: 50% 50%;
+        -moz-grid-template-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         
     }
@@ -573,7 +671,15 @@ footer{
 }
 @media only screen  and (max-width:939px){
     header{
+         -moz-display: grid;
+        -webkit-display: grid;
+        -o-display: grid;
+        -ms-display: grid;
         display: grid;
+        -o-grid-template-columns: 55% 45%;
+        -ms-grid-template-columns: 55% 45%;
+        -webkit-grid-template-columns: 55% 45%;
+        -moz-grid-template-columns: 55% 45%;
         grid-template-columns: 55% 45%;
     }
      
@@ -590,7 +696,15 @@ footer{
         margin-left: .5em;
     }
      header{
+         -moz-display: grid;
+        -webkit-display: grid;
+        -o-display: grid;
+        -ms-display: grid;
         display: grid;
+         -o-grid-template-columns: auto auto;
+         -moz-grid-template-columns: auto auto;
+         -ms-grid-template-columns: auto auto;
+         -webkit-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
     }
     .certificate img{
@@ -602,7 +716,15 @@ footer{
         margin-left: .5em;
     }
      header{
+         -moz-display: grid;
+        -webkit-display: grid;
+        -o-display: grid;
+        -ms-display: grid;
         display: grid;
+          -o-grid-template-columns: auto auto;
+         -moz-grid-template-columns: auto auto;
+         -ms-grid-template-columns: auto auto;
+         -webkit-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
     }
     .certificate img{
@@ -620,6 +742,10 @@ footer{
         left: -1em;
     }
     header{
+        -o-display: flex;
+        -webkit-display: flex;
+        -ms-display: flex;
+        -moz-display: flex;
         display: flex;
     }
 }
@@ -669,6 +795,10 @@ footer{
 }
 @media only screen and (max-width:761px){
     main{
+        -o-grid-template-columns: 30% 70%;
+        -ms-grid-template-columns: 30% 70%;
+        -webkit-grid-template-columns: 30% 70%;
+        -moz-grid-template-columns: 30% 70%;
         grid-template-columns: 30% 70%;
     }
     .content__wrapper{
@@ -774,11 +904,27 @@ footer{
         width:90%;
     }
     main{
+        -o-display: flex;
+        -webkit-display: flex;
+        -ms-display: flex;
+        -moz-display: flex;
         display: flex;
+        -o-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .gallery_bottom{
+        -o-display: grid;
+        -ms-display: grid;
+        -moz-display: grid;
+        -webkit-display: grid;
         display: grid;
+        -o-grid-template-columns: 50% 50%;
+        -ms-grid-template-columns: 50% 50%;
+        -moz-grid-template-columns: 50% 50%;
+        -webkit-grid-template-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         
     }
@@ -891,7 +1037,15 @@ footer{
         width: 80%;
     }
     footer ul{
+        -o-display: grid;
+        -ms-display: grid;
+        -moz-display: grid;
+        -webkit-display: grid;
         display: grid;
+         -o-grid-template-columns: auto auto;
+        -ms-grid-template-columns: auto auto;
+        -moz-grid-template-columns: auto auto;
+        -webkit-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
        
     }
@@ -910,11 +1064,27 @@ footer{
         width:90%;
     }
     main{
+        -o-display: flex;
+        -ms-display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
         display: flex;
+        -o-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .gallery_bottom{
+        -o-display: grid;
+        -ms-display: grid;
+        -moz-display: grid;
+        -webkit-display: grid;
         display: grid;
+        -o-grid-template-columns: 50% 50%;
+        -ms-grid-template-columns: 50% 50%;
+        -moz-grid-template-columns: 50% 50%;
+        -webkit-grid-template-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         
     }
@@ -1027,7 +1197,15 @@ footer{
         width: 80%;
     }
     footer ul{
+        -o-display: grid;
+        -ms-display: grid;
+        -webkit-display: grid;
+        -moz-display: grid;
         display: grid;
+         -o-grid-template-columns: auto auto;
+        -ms-grid-template-columns: auto auto;
+        -webkit-grid-template-columns: auto auto;
+        -moz-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
        
     }
@@ -1049,11 +1227,27 @@ footer{
         width:90%;
     }
     main{
+        -o-display: flex;
+        -ms-display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
         display: flex;
+        -o-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .gallery_bottom{
+        -o-display: grid;
+        -moz-display: grid;
+        -ms-display: grid;
+        -webkit-display: grid;
         display: grid;
+        -o-grid-template-columns: 50% 50%;
+        -moz-grid-template-columns: 50% 50%;
+        -ms-grid-template-columns: 50% 50%;
+        -webkit-grid-template-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         
     }
@@ -1166,7 +1360,15 @@ footer{
         width: 80%;
     }
     footer ul{
+        -moz-display: grid;
+        -o-display: grid;
+        -webkit-display: grid;
+        -ms-display: grid;
         display: grid;
+        -moz-grid-template-columns: auto auto;
+        -o-grid-template-columns: auto auto;
+        -webkit-grid-template-columns: auto auto;
+        -ms-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
        
     }
@@ -1196,11 +1398,27 @@ footer{
         width:90%;
     }
     main{
+        -moz-display: flex;
+        -o-display: flex;
+        -webkit-display: flex;
+        -ms-display: flex;
         display: flex;
+        -moz-flex-direction: column-reverse;
+        -o-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .gallery_bottom{
+        -moz-display: grid;
+        -o-display: grid;
+        -webkit-display: grid;
+        -ms-display: grid;
         display: grid;
+        -moz-grid-template-columns: 50% 50%;
+        -o-grid-template-columns: 50% 50%;
+        -webkit-grid-template-columns: 50% 50%;
+        -ms-grid-template-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         
     }
@@ -1311,7 +1529,15 @@ footer{
         width: 80%;
     }
     footer ul{
+        -moz-display: grid;
+        -o-display: grid;
+        -webkit-display: grid;
+        -ms-display: grid;
         display: grid;
+        -moz-grid-template-columns: auto auto;
+        -o-grid-template-columns: auto auto;
+        -webkit-grid-template-columns: auto auto;
+        -ms-grid-template-columns: auto auto;
         grid-template-columns: auto auto;
        
     }
