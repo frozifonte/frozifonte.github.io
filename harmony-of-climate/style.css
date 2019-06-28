@@ -205,6 +205,9 @@ aside{
     
 }
 .bg-wrapper{
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -webkit-border-radius: 1em;
     border-radius: 1em;
   border:  0.0625em solid #d8dce3;
     
@@ -312,6 +315,9 @@ aside{
 
 .content__wrapper{
     background: #fff;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -ms-border-radius: 1em;
     border-radius: 1em;
     -moz-display: flex;
     -webkit-display: flex;
@@ -1516,14 +1522,26 @@ footer{
     z-index: -10;
     }
    .st:hover{
-    border-top-left-radius: 1em;
+    
+       -moz-border-top-left-radius: 1em;
+       -ms-border-top-left-radius: 1em;
+       -webkit-border-top-left-radius: 1em;
+       
+       
+       border-top-left-radius: 1em;
     background-color: #dae2e2;
     cursor: pointer;
 }
     .content__img img{
         min-width: 60%;
+         -moz-border-top-left-radius: 1em;
+       -ms-border-top-left-radius: 1em;
+       -webkit-border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         border-bottom-right-radius: 1em;
+        -webkit-border-bottom-right-radius: 1em;
+        -moz-border-bottom-right-radius: 1em;
+        -ms-border-bottom-right-radius: 1em;
     }
     footer{
         width: 80%;
