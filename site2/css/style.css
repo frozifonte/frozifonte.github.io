@@ -123,7 +123,7 @@ header{
     width: 85%;
     margin: 113rem auto;
 }
-.about-text__wrapper h1{
+.about-text__wrapper h2{
     color: #666666;
     font-family: "Fira Sans";
     font-size: 24px;
@@ -177,7 +177,7 @@ header{
     width: 80%;
     margin: 120rem 100rem;
 }
-.instagram-wrapper h1{
+.instagram-wrapper h2{
     color: #f9f9f9;
     font-family: "Fira Sans";
     font-size: 24rem;
@@ -229,7 +229,7 @@ header{
     background-color: #282b2f;
     height: 900rem;
 }
-.DJ-wrapper h1{
+.DJ-wrapper h2{
     color: #2ebd59;
     font-family: "Fira Sans";
     font-size: 24rem;
