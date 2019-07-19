@@ -1,0 +1,979 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font-size: 1px;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    overflow-x: hidden !important;
+}
+
+/*******************************
+
+        HEADER
+
+*******************************/
+
+header{
+    background: url('../img/header.jpg') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.header-wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+.header-top{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+     padding-top: 88rem;
+}
+.header-logo{
+    background-color: #000000;
+    display: inline-block;
+   
+}
+.header-logo span{
+    color: #ffffff;
+    font-family: "Fira Sans - Extra Bold", sans-serif;
+    font-size: 60rem;
+    font-weight: 800;
+    padding: 12rem 22rem;
+    
+}
+.header-menu p:hover{
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.header-menu span {
+    color: #141414;
+    font-size: 30rem;
+    font-weight: 400;
+    /* Text style for "" */
+    letter-spacing: -1.5rem;
+}
+.header-menu p{
+    color: #141414;
+    font-family: "Fira Sans - Hair";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header-title h1{
+    color: #000000;
+    font-family: "Fira Sans";
+    font-size: 72rem;
+    font-weight: 300;
+    /* Text style for "A, mazing" */
+    letter-spacing: -1.8rem;
+    padding-top: 197rem;
+}
+.header-title p{
+    color: #000000;
+    font-family: "Fira Sans";
+    font-size: 30rem;
+    font-weight: 300;
+    line-height: 45rem;
+    padding-bottom: 278rem;
+    padding-top: 26rem;
+}
+.header-title span{
+    /* Text style for "John Doe" */
+    font-family: "Fira Sans";
+    font-weight: 700;
+    letter-spacing: -0.75rem;
+}
+
+/*******************************
+
+        ABOUT
+
+*******************************/
+
+.about{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+.about-img img{
+    min-width: 100%;
+    font-size: 0;
+}
+.about-text{
+    background: #f3f1ef;
+    max-width: 100%;
+    max-height: 500rem;
+}
+.about-text__wrapper{
+    width: 85%;
+    margin: 113rem auto;
+}
+.about-text__wrapper h1{
+    color: #666666;
+    font-family: "Fira Sans";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-text__wrapper p{
+    color: #666666;
+    font-family: "Fira Sans";
+    font-size: 36rem;
+    font-weight: 300;
+    /* Text style for "Fusce bibe" */
+    letter-spacing: -0.9rem;
+}
+/*******************************
+
+        GALLERY
+
+*******************************/
+
+.gallery{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+    grid-template-columns: repeat(4, 25%);
+}
+.gallery-pic img{
+    max-width: 100%;
+}
+
+/*******************************
+
+        INSTAGRAM
+
+*******************************/
+.instagram{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 25% 25%;
+    grid-template-columns: 50% 25% 25%;
+    height: 500rem;
+    max-width: 100%;
+}
+.instagram-text,
+.instagram-add{
+    background: #3f729b;
+}
+.instagram-wrapper,
+.spotify-wrapper,
+.itunes-wrapper{
+    width: 80%;
+    margin: 120rem 100rem;
+}
+.instagram-wrapper h1{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 24rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.instagram-wrapper p{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 36rem;
+    font-weight: 300;
+    /* Text style for "Etiam lacu" */
+    letter-spacing: -0.9rem;
+    margin-top: 42rem;
+    margin-bottom: 37rem;
+}
+.instagram-wrapper a{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 18rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "VIEW ON IN" */
+    letter-spacing: 3.6rem;
+    border-radius: 28rem;
+    border: 2rem solid #ffffff;
+    padding: 22rem 27rem;
+}
+.instagram-wrapper a:hover{
+    text-decoration: none;
+    background: #f9f9f9;
+    color: #3f729b;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+/*******************************
+
+        DJ
+
+*******************************/
+.DJ{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:25% 75%;
+    grid-template-columns:25% 75%;
+}
+.DJ-container{
+    background-color: #282b2f;
+    height: 900rem;
+}
+.DJ-wrapper h1{
+    color: #2ebd59;
+    font-family: "Fira Sans";
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 32rem;
+    text-transform: uppercase;
+}
+.DJ-wrapper span{
+    font-family: "Fira Sans";
+    font-size: 18rem;
+    font-weight: 400;
+}
+.DJ-wrapper p{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 21rem;
+    padding-bottom: 50rem;
+    padding-top: 40rem;
+}
+.DJ-wrapper a{
+    color: #2ebd59;
+    font-family: "Fira Sans";
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 32rem;
+    text-transform: uppercase;
+    border-radius: 25rem;
+    border: 2rem solid #2ebd59;
+    padding: 16rem 18rem;
+}
+.DJ-wrapper a:hover{
+    text-decoration: none;
+    background: #2ebd59;
+    color: #212227;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.DJ-wrapper{
+    width: 90%;
+    padding: 140rem 0 96rem 30rem;
+    margin: 0 auto;
+    
+}
+.DJ-about{
+    width: 33.4%;
+    background: #212227;
+    height: 500rem;
+    
+}
+.DJ-bg{
+    background: url('../img/4sec.jpg') center center no-repeat;
+    background-size: cover;
+    
+    
+}
+
+/*******************************
+
+        RELATED
+
+*******************************/
+
+.related{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+}
+.spotify{
+    background: #2ebd59;
+}
+
+.spotify-wrapper h2,
+.itunes-wrapper h2{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 24rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.spotify-wrapper p,
+.itunes-wrapper p{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 36rem;
+    font-weight: 300;
+    /* Text style for "Follow me," */
+    letter-spacing: -0.9rem;
+    margin-top: 38rem;
+    margin-bottom: 43rem;
+}
+.itunes-wrapper{
+    width: 80%;
+    margin: 120rem 80rem;
+}
+.spotify-wrapper a,
+.itunes-wrapper a{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 18rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "buy from i" */
+    letter-spacing: 3.6rem;
+    padding: 21rem 28rem;
+    border-radius: 28rem;
+    border: 2rem solid #ffffff;
+}
+.spotify-wrapper a:hover{
+    text-decoration: none;
+    color:#2ebd59;
+    background:#f9f9f9;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+    
+}
+.itunes-wrapper a:hover{
+    text-decoration: none;
+    color:#282b2f;
+    background:#f9f9f9;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.itunes{
+    background: #282b2f;
+}
+/*******************************
+
+        FOOTER
+
+*******************************/
+
+footer{
+    background: #212227;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+footer h2{
+    color: #f9f9f9;
+    font-family: "Fira Sans";
+    font-size: 18rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer p{
+    color: #919191;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 300;
+    line-height: 21rem;
+    font-family: "Fira Sans Light";
+    font-weight: 300;
+    
+}
+footer small{
+    font-family: "Fira Sans Light";
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.footer-about__wrapper{
+    width: 65%;
+    margin: 0 0 0 109rem;
+   
+}
+.footer-subscribe-sponsor__wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-about-contact-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 75% 25%;
+    grid-template-columns: 75% 25%;
+}
+
+.footer-follow-me a{
+    color: #919191;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 24rem;
+    text-transform: uppercase;
+   
+}
+
+.footer-sponsor li{
+    color: #f2f7fb;
+    font-family: Lato;
+    font-size: 12rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1rem solid #f4f8fb;
+    display: inline-block;
+    padding: 35rem 23rem;
+    margin-right: 20rem;
+    margin-bottom: 106rem;
+}
+
+.footer-follow-me h2,
+.footer-sponsor h2{
+    margin-top: 80rem;
+    margin-bottom: 26rem;
+}
+
+.footer-about h2,
+.footer-contact-me h2,
+.footer-subscribe h2{
+    margin-top: 100rem;
+    margin-bottom: 32rem;
+}
+.footer-subscribe p{
+    width: 480rem;
+}
+input{
+    width: 480rem;
+    height: 60rem;
+    background-color: #909193;
+    padding: 25rem 37rem 25rem 20rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 300;
+    line-height: 21rem;
+    text-transform: uppercase;
+    margin-top: 19rem;
+    opacity: 0.4;
+    z-index: 1;
+    
+}
+input::-webkit-input-placeholder{
+    color:#fff;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 300;
+    line-height: 21rem;
+    text-transform: uppercase;
+} 
+.text{
+    color: #fff;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 300;
+    line-height: 21rem;
+    text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder{
+    color: #fff;
+    font-family: "Fira Sans";
+    font-size: 14rem;
+    font-weight: 300;
+    line-height: 21rem;
+    text-transform: uppercase;
+} 
+
+
+.fa-arrow-right{
+    opacity: 0.6;
+    color: #919191;
+    font-family: "Font Awesome";
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21rem;
+    z-index: 2;
+    position: relative;
+    bottom: -2%;
+    left: -5%;
+    
+}
+.fab{
+    color: #919191;
+    font-family: "Font Awesome";
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+    margin-right: 15rem;
+}
+/*******************************
+
+        MEDIA
+
+*******************************/
+@media screen and (min-width:1400px){
+    footer p{
+        font-size: 18rem;
+    }
+}
+@media screen and (min-width:1600px){
+    .itunes-wrapper{
+    padding: 0 80rem 120rem 80rem;
+}
+}
+@media screen and (max-width:1256px){
+   .footer-about__wrapper{
+    width: 65%;
+    margin: 0 0 0 100rem;
+   
+}
+    .footer-subscribe-sponsor__wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width:1184px){
+    .footer-subscribe-sponsor__wrapper{
+        width: 90%;
+        margin: 0 auto;
+}
+}
+@media screen and (max-width:1120px){
+    footer{
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+    .footer-about__wrapper{
+    width: 80%;
+    margin: 0 0 0 50rem;
+   
+}
+    .footer-subscribe-sponsor__wrapper{
+        width: 90%;
+        margin: 0 auto;
+}
+    .DJ-wrapper{
+    width: 90%;
+    padding: 100rem 0 96rem 30rem;
+    margin: 0 auto;
+    
+}
+.DJ-about{
+    width: 33.4%;
+    background: #212227;
+    height: 500rem;
+    
+}
+}
+@media screen and (max-width:1110px){
+    footer{
+        -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    }
+    .footer-about-contact-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .DJ{
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    }
+    .DJ-container{
+        display: none;
+    }
+    .spotify-wrapper{
+        margin: 100rem 45rem;
+    }
+    .itunes-wrapper{
+        width: 60%;
+        margin: 100rem auto;
+    }
+    .instagram-wrapper{
+        margin: 80rem 45rem;
+    }
+    .footer-contact-and-follow__wrapper{
+        width: 80%;
+        margin: 0 0 0 50px;
+    }
+}
+
+@media screen and (max-width:920px){
+    footer{
+        -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+    }
+    .itunes-wrapper{
+        width: 70%;
+    }
+    .about-text__wrapper{
+        margin: 60rem auto;
+    }
+}
+@media screen and (max-width:898px){
+    .instagram-wrapper{
+        margin: 60rem 45rem;
+    }
+}
+
+@media screen and (max-width:870px){
+    .header-wrapper{
+        width: 90%;
+    }
+    .about{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .about-img img{
+        max-width: 100%;
+    }
+    .instagram-img img{
+        display: none;
+    }
+    .instagram-add{
+         display: none;
+    }
+    .instagram{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    .DJ-wrapper p{
+        font-size: 15rem;
+    }
+    footer p{
+        font-size: 18rem;
+    }
+    .gallery{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+        overflow-x: scroll;
+    }
+    .gallery-pic img{
+        min-width: 100%;
+        max-width: initial;
+    }
+    .about-text__wrapper{
+        width: 90%;
+    }
+    .about-text{
+        height: auto;
+    }
+    .related{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .itunes-wrapper{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:847px) {
+    footer{
+        -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+    }
+}
+@media screen and (max-width:800px) {
+    .about-text__wrapper p{
+        font-size: 30rem;
+    }
+    .instagram-wrapper p{
+        font-size: 30rem;
+    }
+    .spotify-wrapper p, 
+    .itunes-wrapper p{
+        font-size: 30rem;
+    }
+    .DJ-wrapper{
+        padding: 60rem 0 96rem 30rem;
+    }
+
+    footer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer-about-contact-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 95%;
+    }
+    .footer-sponsor{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer-subscribe h2{
+        margin-top: 0;
+}
+    .footer-subscribe-sponsor__wrapper{
+        z-index: 10;
+        margin-top: -70rem;
+    }
+    .footer-about__wrapper{
+        margin: 0 0 0 40rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    
+    .DJ-wrapper{
+        width: 90%;
+        padding: 60rem 0 50rem 30rem;
+    }
+    .DJ-about{
+        width: 50%;
+        height: auto;
+    }
+    footer{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .footer-about-contact-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 95%;
+        margin-top: -20rem;
+    }
+    .footer-sponsor li{
+        margin-bottom: 0;
+    }
+    .footer-subscribe h2{
+        margin-top: 0;
+}
+    .footer-subscribe-sponsor__wrapper{
+        z-index: 1;
+        margin-top: 30rem;
+    }
+    .footer-about__wrapper{
+        margin: 0 0 0 40rem;
+    }
+}
+
+@media screen and (max-width:570px){
+    .DJ-about{
+        width: 60%;
+    }
+    .footer-about__wrapper{
+        margin:  0 0 0 30rem;
+    }
+    .footer-about-contact-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        width: 95%;
+        margin-top: 0rem;
+    }
+    .footer-contact-and-follow__wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 0 0 30rem;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 90%;
+    }
+    .footer-follow-me h2{
+        margin-top: 100rem;
+    }
+    .header-title p{
+        font-size: 26rem;
+        padding-bottom: 78rem;
+    }
+    .header-title h1{
+        padding-top: 57rem;
+    }
+    .header-top{
+        padding-top: 44rem;
+    }
+    .DJ-about{
+        width: 100%;
+        
+    }
+    .DJ-bg{
+        background: none;
+    }
+    .DJ-wrapper{
+        padding: 60rem 0 50rem 10rem;
+    }
+}
+
+@media screen and (max-width:552px){
+    .footer-subscribe{
+        width: 99%;
+    }
+    input{
+        width: 95%;
+    }
+    .footer-subscribe p{
+        width: auto;
+    }
+    .footer-about__wrapper{
+        width: 90%;
+    }
+    
+    
+    .instagram-wrapper{
+        margin: 80rem 30rem;
+    }
+    
+    .spotify-wrapper{
+        margin: 100rem 30rem;
+    }
+    .header-title h1{
+        font-size: 62rem;
+    }
+}
+@media screen and (max-width:400px){
+    .fa-arrow-right{
+        left: -7%;
+    }
+    .header-title h1{
+        font-size: 52rem;
+    }
+    .instagram-wrapper,
+    .spotify-wrapper,
+    .itunes-wrapper{
+        width: 90%;
+        margin: 60rem auto;
+    }
+    .DJ-wrapper{
+        width: 90%;
+        padding: 60rem auto;
+    }
+    .footer-contact-and-follow__wrapper,
+    .footer-about__wrapper{
+         width: 90%;
+        margin: 0 auto;
+    }
+    .footer-about h2,
+    .footer-contact-me h2,
+     .footer-follow-me h2{
+         margin-top: 50rem;
+    }
+}
+
+@media screen and (max-width:380px){
+    .footer-contact-and-follow__wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:360px){
+    .header-logo span{
+        font-size: 40rem;
+    }
+    .header-title h1{
+        font-size: 46rem;
+    }
+    .header-title p{
+        font-size: 24rem;
+    }
+    .footer-subscribe{
+         width: 100%;
+    }
+    .fa-arrow-right{
+        left: -8%;
+    }
+    input{
+        width: 90%;
+    }
+   
+}
+
+@media screen and (max-width:347px){
+    .footer-sponsor li{
+        margin-right: 10rem;
+    }
+}
+@media screen and (max-width:320px){
+    .spotify-wrapper a{
+        padding: 21rem 25rem;
+    }
+    .instagram-wrapper a{
+        padding: 22rem 25rem;
+    }
+}
+@media screen and (max-width:313px){
+    .footer-sponsor li{
+        margin-right: 5rem;
+    }
+    .spotify-wrapper a{
+        padding: 21rem 20rem;
+    }
+    .instagram-wrapper a{
+        padding: 22rem 20rem;
+    }
+    .header-title h1{
+        font-size: 40rem;
+    }
+}
+@media screen and (max-width:303px){
+    .spotify-wrapper a{
+        padding: 21rem 18rem;
+    }
+    .instagram-wrapper a{
+        padding: 22rem 18rem;
+    }
+}
+
