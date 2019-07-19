@@ -11,9 +11,7 @@ body{
     font-family: 'Fira Sans', sans-serif;
     overflow-x: hidden !important;
 }
-a{
-    text-decoration:none;
-}
+
 
 /*******************************
 
@@ -208,6 +206,7 @@ header{
     border-radius: 28rem;
     border: 2rem solid #ffffff;
     padding: 22rem 27rem;
+    text-decoration: none;
 }
 .instagram-wrapper a:hover{
     text-decoration: none;
@@ -264,6 +263,7 @@ header{
     border-radius: 25rem;
     border: 2rem solid #2ebd59;
     padding: 16rem 18rem;
+    text-decoration: none;
 }
 .DJ-wrapper a:hover{
     text-decoration: none;
@@ -343,6 +343,7 @@ header{
     padding: 21rem 28rem;
     border-radius: 28rem;
     border: 2rem solid #ffffff;
+    text-decoration: none;
 }
 .spotify-wrapper a:hover{
     text-decoration: none;
@@ -424,6 +425,7 @@ footer small{
     font-weight: 700;
     line-height: 24rem;
     text-transform: uppercase;
+    text-decoration: none;
    
 }
 
