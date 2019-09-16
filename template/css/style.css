@@ -33,6 +33,13 @@ a{
 li{
     list-style-type: none;
 }
+iframe {
+    frameborder:0;
+    scrolling:no;
+    marginheight:0;
+    marginwidth:0;
+}
+    
 /******************************
 
         HEADER
