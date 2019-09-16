@@ -1,0 +1,29 @@
+header{
+    background: url('../img/header.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 1.6875rem 0 21rem 0;
+}
+
+nav{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.topnav{
+    margin-top: 3.9375rem;
+}
+nav a{
+    color: #1a1a1a;
+    font-family: "Times New Roman PSMT";
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1.48625rem;
+    text-transform: uppercase;
+}
+nav a:hover{
+    border-bottom: 2px solid #1a1a1a;
+}

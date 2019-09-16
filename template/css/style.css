@@ -1,0 +1,826 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+body{
+    overflow-x: hidden !important;
+    font-family: 'Times New Roman PSMT', serif;
+    background: #f2efe5;
+     
+}
+@font-face {
+    font-family:'Times New Roman PSMT';
+    src: url('../fonts/TimesNewRomanPSMT.ttf');
+}
+@font-face{
+    font-family:'Times New Roman PS - Bold MT';
+    src: url('../fonts/TimesNewRomanPS-BoldMT.otf');
+    font-weight: 800;
+    font-style:bold;
+}
+@font-face {
+    font-family:'Times New Roman PS - Italic MT';
+    src: url('../fonts/TimesNewRomanPS-ItalicMT.otf');
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/******************************
+
+        HEADER
+
+*****************************/
+
+header{
+    background: url('../img/header.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 1.6875em 0 21em 0;
+}
+
+nav{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav{
+    margin-top: 3.9375em;
+}
+nav a{
+    color: #1a1a1a;
+    font-family: "Times New Roman PSMT";
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 2.25em;
+    margin-right: .5em;
+    margin-left: .5em;
+    text-transform: uppercase;
+}
+nav a:hover{
+    border-bottom: 2px solid #1a1a1a;
+}
+
+/******************************
+
+        ABOUT
+
+*****************************/
+
+.about-top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about-us__bg{
+    background: url('../img/about/bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 13em 0 12em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us__bg h1{
+    color: #010101;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 10px solid #121212;
+    padding: 0.5em 1.72em; 
+}
+.about-us__descr{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5.6875em 0 8.75em 0; 
+}
+.about-us__descr img{
+    margin-left: 40%;
+    
+}
+.about-tittle{
+    color: #000000;
+    font-family: "Times New Roman PSMT";
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 1.72em 0;
+}
+.about-descr{
+    color: #000000;
+    font-family: "Times New Roman PSMT";
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.about-bottom{
+    display: grid;
+    grid-template:  repeat(2, 50%) / repeat(6, 16.6666666667%);
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 0;
+}
+.img__wrapper{
+    
+    position: relative;
+}
+.about-bottom img{
+    width: 100%;
+    font-size: 0;
+    vertical-align: bottom;
+}
+.img__wrapper a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../img/vectors/zoom.png') center center no-repeat;
+    
+    display: none;
+    
+}
+
+.img__wrapper a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc8b6;
+    opacity: 0.66;
+    display: none;
+}
+
+.img__wrapper a:hover:before,
+.img__wrapper a:hover:after{
+    cursor: pointer;
+    display: block;
+}
+.about-quote {
+    background: url("../img/about/quote_section.jpg") center center no-repeat;
+    background-size: cover;
+    height: auto;
+    
+}
+
+.quote-wrapper::before{
+    content:open-quote;
+    width: 100%;
+    font-size: 8.125rem;
+    font-weight: 800;
+     font-style: italic;
+    margin-left: -10%;
+    position: relative;
+    bottom:-0.46153846153846153846em;
+    z-index: 100;
+}
+.quote-wrapper::after{
+    content:close-quote;
+    font-size: 8.125rem;
+    font-weight: 800;
+     font-style: italic;
+    margin-left: 90%;
+}
+.quote-tittle{
+    width: 70%;
+    margin: 0 auto;
+    color: #f2efe5;
+    font-family: "Times New Roman PS - Italic MT";
+     height: auto;
+}
+
+
+.quote-wrapper{
+    content: '"' '"';
+    width: 80%;
+    margin: 0 auto;
+}
+.quote{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+.name{
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase; 
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    padding-bottom: 3.857142em;
+}
+
+/******************************
+
+        TEAM
+
+*****************************/
+
+.team{
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(3, 33.3%);
+}
+.team-title{
+    background: url("../img/team/img_bg.jpg") center center no-repeat;
+     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.team-title__wrapper{
+    width: 80%;
+    margin: 0 auto;
+     display: flex;
+    justify-content: center;
+}
+.team-title__wrapper h1{
+    color: #010101;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 10px solid #121212;
+    padding: .8em 1.722em; 
+    display: inline-block;
+}
+.team img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.team-descr,
+.team-descr-fem{
+    background: #ccc8b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-descr-fem::after{
+    content: '';
+    border:25px solid transparent;
+    border-right-color:#ccc8b6;
+    position: absolute;
+    margin: -10% 0 0 -18%;
+}
+.team-descr__wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.team-descr__wrap h2{
+    color: #000000;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+.team-descr__wrap p{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin:3.714285em 0 3.4285714em 0; 
+}
+.team-descr__wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+.team-descr__wrap a,
+.contact-text-side a{
+    color: #000000;
+    font-family: "Font Awesome";
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+.team-descr__wrap ul > li:nth-child(1)> a:hover,
+.contact-text-side ul > li:nth-child(1) > a:hover{
+    color: #3c579e;
+}
+.team-descr__wrap ul > li:nth-child(2)> a:hover,
+.contact-text-side ul > li:nth-child(2) > a:hover{
+    color: #33CEC3;
+}
+.team-descr__wrap ul > li:nth-child(3)> a:hover,
+.contact-text-side ul > li:nth-child(3) > a:hover{
+    color: #3b455d;
+}
+.team-descr__wrap ul > li:nth-child(4)> a:hover,
+.contact-text-side ul > li:nth-child(4) > a:hover{
+    color: #1a75bb;
+}
+.team-descr__wrap ul > li:nth-child(5)> a:hover,
+.contact-text-side ul > li:nth-child(5) > a:hover{
+    color: #cd0075;
+}
+.team-descr__wrap ul > li:nth-child(6)> a:hover,
+.contact-text-side ul > li:nth-child(6) > a:hover{
+    color: #db4439;
+}
+
+
+
+.team-email{
+    background: #f2efe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-email__responsive{
+    background: #f2efe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.team-email__wrapper{
+    
+    width: 80%;
+    margin: 0 auto;
+}
+.team-email__wrapper h4{
+    color: #000000;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.125em;
+    text-transform: uppercase;
+}
+.team-email__wrapper p{
+    color: #000000;
+    font-family: "Times New Roman PSMT";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.8571428em;
+    text-transform: uppercase;
+}
+input[type="email"]{
+    margin: 3.3333em 0 3.3333em 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    padding: 1.3333em 5% 1em 1.6666em;
+    opacity: 0.6;
+    color: #333333;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-transform: uppercase;
+}
+
+input:placeholder{
+    opacity: 0.45;
+    color: #333333;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-transform: uppercase;
+}
+button{
+    width: 100%;
+    height: 3.333em;
+    color: #ffffff;
+    font-family: "Times New Roman PSMT";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-transform: uppercase;
+    background: #9a977a;
+}
+.team-quote{
+    background: url(../img/team/tweet_bg.png) center center no-repeat;
+    background-size: cover;
+    padding: 7em 0 7.75em 0;
+}
+.team-quote p{
+    color: #f2efe5;
+    font-family: "Times New Roman PS - Bold Italic MT";
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    
+     
+}
+
+.team-quote a{
+    color: #ccc8b6;
+    font-family: "Font Awesome";
+    font-size: 3rem;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+.team-quote__wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+/******************************
+
+        GALLERY
+
+*****************************/
+
+.gallery-tittle__bg{
+    background: #afac9c;
+}
+.gallery-top{
+    display: grid;
+    grid-template-columns:40% 60%;
+}
+.gallery-cards{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+.gallery-tittle__bg{
+   
+     display: flex;
+    align-items: center;
+    
+}
+.gallery-t__wrap{
+    width: 80%;
+    margin: 0 auto;
+     display: flex;
+    justify-content: center;
+    
+}
+.gallery-t__wrap h1{
+    color: #010101;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 10px solid #121212;
+    padding: .5em 3em; 
+}
+.gallery-top img,
+.gallery-bottom img{
+    font-size: 0;
+    width: 100%;
+    vertical-align: bottom;
+}
+.gallery-bottom{
+    display: grid;
+    grid-template: repeat(3,33.3%) / repeat(5,20%);
+}
+/******************************
+
+        CONTACT
+
+*****************************/
+.contact{
+    background: #e7e5d0;
+    padding: 11.4375em 9.5625em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__wrapper{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    margin: 0 auto;
+}
+.contact__wrapper h2{
+    border: 10px solid #121212;
+    color: #010101;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.47em 1.02em;
+    margin-left: 15%;
+}
+button:hover{
+    cursor: pointer;
+}
+.contact-text-side{
+    width: 80%;
+}
+.adress{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-descr{
+    margin-top: 2.72em;
+    margin-bottom: 2.16em;
+    color: #000000;
+    font-family: "Times New Roman PSMT";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.contact-form input[type='name'],
+.contact-form input[type='email']{
+    width: 100%;
+    height: 3.333em;
+    border: 1px solid #000;
+    padding: 1.333em 5% 1em 1.6em;
+    opacity: 0.6;
+    color: #333333;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-transform: uppercase;
+}
+textarea{
+    width: 100%;
+    height: 18.333em;
+    border: 1px solid #000;
+    padding: 1.333em 5% 1em 1.6em;
+    opacity: 0.6;
+    color: #333333;
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-transform: uppercase;
+    margin-bottom: 1.66em;
+}
+.contact-text-side ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.6875em;
+}
+.contact-form button{
+    width: 80%;
+}
+.contact-tittle{
+    font-family: "Times New Roman PS - Bold MT";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/******************************
+
+        FOOTER
+
+*****************************/
+
+footer{
+    background: #aeaeae;
+    padding: 10.625rem 0 4.0625rem 0;
+}
+.bottomnav ul{
+    margin-bottom: 7.1875rem;
+}
+footer p{
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.35px;
+}
+
+
+/******************************
+
+        MEDIA
+
+*****************************/
+
+@media screen and (min-width:1440px){
+    iframe{
+        height: 500px;
+    }
+}
+@media screen and (min-width:1600px){
+    iframe{
+        height: 700px;
+    }
+    nav {
+        width: 80%;
+    }
+    nav img {
+        width: 100%;
+    }
+}
+@media screen and (min-width:1800px){
+    :root{
+        font-size: 20px;
+    }
+    .team-descr-fem::after{
+        margin: -10% 0 0 -17.8%;
+    }
+    small{
+        font-size: 1rem;
+    }
+   
+}
+@media screen and (min-width:2000px){
+    :root{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:2300px){
+    :root{
+        font-size: 30px;
+    }
+    .team-descr-fem::after{
+        margin: -10% 0 0 -17.6%;
+    }
+}
+@media screen and (max-width:1200px){
+    nav{
+        width: 80%;
+    }
+    .contact{
+        padding: 11.4375em 0;
+    }
+    .contact__wrapper{
+        width: 90%;
+    }
+    .about-us__bg{
+        padding: 10em 0 9em 0;
+    }
+    .about-us__descr{
+         padding:3em 0 6em 0;
+    }
+    .gallery-t__wrap h1{
+        padding: 0.5em 1.5em;
+    }
+    header{
+        padding: 2em 0 21em 0;
+    }
+   .team-descr__wrap p{
+        margin: 2em 0 2em 0;
+    }
+    .team-descr__wrap{
+        margin: .5em auto;
+    }
+}
+@media screen and (max-width:1024px){
+    .team-descr-fem::after{
+        margin: -13% 0 0 -27%;
+    }
+    .about-bottom{
+        grid-template: repeat(4, 25%) / repeat(3, 33.3%);
+    }
+    
+    .team-descr-fem::after{
+        margin: -13% 0 0 -28%;
+    }
+    .team{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3%;
+        margin-bottom: 10em;
+    }
+    .team-email{
+        display: none;
+    }
+    .team-email__responsive{
+        display: flex;
+}
+    .contact-text-side{
+        width: 90%;
+    }
+    .contact__wrapper{
+        width: 95%;
+    }
+    .gallery-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .gallery-top{
+        display: block;
+    }
+    .gallery-bottom{
+        grid-template: repeat(5,20%) / repeat(3,33.3%);
+    }
+    .gallery-t__wrap{
+        margin: 3em auto;
+    }
+    
+}
+@media screen and (max-width:880px){
+    nav{
+        width: 90%;
+    }
+    .contact{
+        padding: 6em 0;
+    }
+    .team{
+        margin-bottom: 5em;
+    }
+}
+@media screen and (max-width:780px){
+    .contact__wrapper{
+        display: block;
+        width: 70%;
+    }
+    .contact-text-side{
+        margin-bottom: 5em;
+        width: 100%;
+    }
+    .contact__wrapper h2{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:670px){
+    nav{
+        width: 95%;
+         display: flex;
+        flex-direction: column;
+    }
+    
+    nav > ul > li > img{
+        max-width: 100%;
+    }
+    .about-top{
+        display: block;
+    }
+    .team{
+        display: block;
+        margin-bottom: 0;
+        background-color: #ccc8b6;
+    }
+    .team img{
+        width: 95%;
+        
+        margin-left: .7em;
+        margin-right: auto;
+    }
+    .contact__wrapper{
+        width: 95%;
+    }
+    
+    .bottomnav > p {
+        line-height: 1em;
+    }
+    .about-us__bg h1,
+    .team-title__wrapper h1,
+    .gallery-t__wrap h1{
+        font-size: 2rem;
+    }
+    .team-title__wrapper{
+        padding: 3em 0;
+    }
+    .team-email__wrapper{
+        padding: 3em 0;
+    }
+   
+    .team-descr-fem::after{
+        display: none;
+    } 
+    .team-descr__wrap{
+        margin: 1.5em auto;
+    }
+    .about-bottom{
+        grid-template: repeat(6, 16.67%) / repeat(2, 50%);
+    }
+    .gallery-bottom{
+        grid-template: repeat(7, 14.28%) / repeat(2, 50%);
+    }
+    .gallery-cards{
+        grid-template-columns: 50% 50%;
+    }
+    .gallery-cards .img__wrapper:nth-child(3){
+        display: none;
+    }
+    .gallery-bottom .img__wrapper:nth-child(15){
+        display: none;
+    }
+    .about-us__descr img{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .topnav {
+        margin: 1em auto;
+    }
+    nav > ul{
+        overflow-y:scroll;
+    }
+    .contact-form button{
+        width: 100%;
+    }
+    .contact__wrapper h2{
+        margin-left: .5em;
+        font-size: 2rem;
+    }
+    .about-us__descr img{
+        margin-left: 30%;
+    }
+}
