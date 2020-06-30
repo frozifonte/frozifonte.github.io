@@ -1,0 +1,105 @@
+@import "common.scss";
+
+.ingredients {
+    padding-top: 110px;
+    
+    &__wrapper {
+        display:flex;
+    }
+    
+    &__title {
+        font-size: 54px;
+        font-family: $Rob;
+        font-weight: 700;
+        line-height: 52px;
+        padding-bottom: 45px;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-family: $Rob;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    &__description {
+        font-size: 18px;
+    }
+    
+    &__item-pic {
+        border-top: 5px solid #ccc;
+    }
+    
+    &__items {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        padding-left: 44px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .ingredients__wrapper {
+        display: block;
+    }
+    .ingredients__pic {
+        display: none;
+    }
+    .ingredients__items {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .ingredients__items {
+        display: block;
+    }
+    .ingredients {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .ingredients__item {
+        padding-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .ingredients__title{
+        font-size: 44px;
+    }
+}
+
+@media screen and (min-width:1640px) {
+    .ingredients {
+        
+        &__title {
+            font-size: 42px;
+        }
+        
+        &__item-title {
+            font-size: 32px;
+        }
+        
+        &__description {
+            font-size:30px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1940px) {
+    .ingredients {
+        
+        &__title {
+            font-size: 46px;
+        }
+        
+        &__item-title {
+            font-size: 34px;
+        }
+        
+        &__description {
+            font-size:33px;
+        }
+    }
+    
+}

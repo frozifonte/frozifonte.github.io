@@ -1,0 +1,85 @@
+@import "common.scss";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__lists {
+        display: flex;
+        flex-shrink: 2;
+    }
+    &__link { 
+        margin-right: 39px;
+    }
+    &__toggle {
+        display: none;
+        overflow: hidden;
+        color:#333;
+        font-size: 24px;
+        cursor:pointer;
+    }
+    &__toggle:hover {
+        border-radius: 10px;
+        background-color: rgba(255,255,255,.8);
+        padding:5px;
+    }
+}
+.link {
+    color:#333333;
+    border-bottom: 1.3px dashed #333;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $Rob;
+}
+.nav-menu {
+    display: none;
+    width: 90%;
+    background-color: rgba(255,255,255,.8);
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px .5px rgba(255,255,255,.9);
+    padding: 10px;
+    margin-bottom: 10px;
+    &__lists {
+        position: relative;
+        top: 0;
+    }   
+}
+
+@media screen and (min-width:1960px) {
+    .link {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1640px) {
+    .link {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        width: 90%;    
+        margin: 0 auto;
+        &-menu__lists {
+            text-align: center;
+        }
+        &__lists {
+        display:none;
+        }
+        &__toggle {
+        display: block;
+        overflow: visible;
+    
+        }
+        &__logo > img{
+            min-width: 100%;
+        }
+    }
+
+}
+
+

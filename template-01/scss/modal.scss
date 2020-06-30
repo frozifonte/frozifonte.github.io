@@ -1,0 +1,139 @@
+@import "common.scss";
+
+.modal {
+    background-color: rgba(255,255,255,.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        display:none;
+    
+    &__form {
+        width: 40%;
+        height: auto;
+        box-shadow: 0 0 15px .3px rgba(255,255,255,1);
+    }
+    &__wrapper {
+        background: url("../img/woman.png") no-repeat center, url("../img/bg_header.png") no-repeat center;
+        background-size: contain, cover;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        border-radius: 10px;
+        z-index: 1;
+        width: 60%;
+        position: relative;
+    }
+    
+    &__wrapper::before{
+        content:url("../img/упаковка.png");
+        position: absolute;
+        left: -10%;
+        top: 40%;
+        
+    }
+    &__pic {
+        border-top-left-radius: 10px;
+    }
+    &__txt {
+        color:#336699;
+        font-family: $Rob;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-left: 63px;
+    }
+}
+
+.error {
+    text-align: center;
+    color:red;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.form-box__item {
+    height: 56px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    line-height: 18px;
+    margin-bottom: 16px;
+    color:#b5c1de;
+    font-size: 20px;
+}
+
+.form-box__item::placeholder {
+    color:#b5c1de;
+    font-size: 20px;
+}
+
+.form-box__item:first-child {
+    background-image:url(../img/name.png);
+    background-position: 10px 13px;
+    background-repeat: no-repeat;
+    bottom: 1px;
+    padding-left: 35px; 
+    
+}
+.form-box__item {
+    background-image: url(../img/tel.png);
+    background-position: 10px 13px;
+    background-repeat: no-repeat;
+    bottom: 1px;
+    padding-left: 35px; 
+    padding-right: 15px;
+    
+}
+
+@media screen and (max-width:1090px) {
+    .modal__wrapper {
+        width:70%;
+    }
+}
+@media screen and (max-width:901px) {
+    .modal__wrapper::before {
+        content:"";
+    }
+    .modal__wrapper {
+        width:90%;
+    }
+    
+}
+
+@media screen and (max-width:705px) {
+    .modal__wrapper {
+        background: url("../img/bg_header.png") no-repeat center;
+        background-size: cover;
+        width: 95%;
+    }
+}
+@media screen and (max-width:655px) {
+    .modal__form {
+        width: 60%;
+    }
+}
+@media screen and (max-width:467px) {
+    .modal__wrapper {
+        width: 90%;
+        display:block;
+    }
+    .modal__close {
+        content:"";
+        float:right;
+        font-size: 30px;
+        color:red;
+        position: relative;
+        bottom:95px;
+        padding: 10px;
+    }
+    .modal__form {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

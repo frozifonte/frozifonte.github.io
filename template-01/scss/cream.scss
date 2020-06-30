@@ -1,0 +1,69 @@
+@import "common.scss";
+.cream {
+    background-image: url("../img/bg_header.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    
+    &__wrapper {
+        justify-content: space-between;
+        display: flex;
+    }
+    &__descr {
+        font-size: 28px;
+        font-family: $Rob;
+        font-weight: 400;
+        color: #333;
+        padding-top: 38px;
+        padding-bottom: 53px;
+    }
+    &__title {
+        font-size: 60px;
+        line-height: 40px;
+        font-family: $Rob;
+        font-weight: 700;
+        padding-top: 45px
+    }
+}
+
+@media screen and (max-width:784px) {
+    .cream {
+        &__wrapper {
+            flex-direction: column;
+        }
+        
+        &__pic {
+            margin: 0 auto
+    }
+        &__title {
+            line-height: 53px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cream__button {
+        display: block;
+        margin: 0 auto;
+    }
+    .cream__title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1640px) {
+    .cream {
+        &__descr {
+            font-size: 32px;
+        }
+    }
+}
+
+@media screen and (min-width:1960px) {
+    .cream {
+        &__descr {
+            font-size: 35px;
+        }
+    }
+}

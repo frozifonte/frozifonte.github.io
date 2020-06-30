@@ -1,0 +1,158 @@
+@import "common.scss";
+
+.about {
+    padding-top: 69px;
+    padding-bottom: 183px;
+    
+    &__title {
+        text-align: center;
+    }
+    &__title > span {
+        color:#ff6666;
+    }
+    &__attention {
+        color:#333;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $Rob;
+        font-weight: 500;
+    }
+    &__attention-wrapper {
+        display: flex;
+        padding-top: 60px;
+    }
+    
+    &__icon-pic4 {
+        border-top: 5px solid #ccc;
+        padding-top: 10px;
+        content: url(../img/attention.png);
+        margin-right: 49px;
+        width: 70px;
+        height: 70px;
+    }
+    &__subtitle {
+        padding-bottom: 21px;
+    }
+    &__wrapper {
+        display:flex;
+        justify-content: space-between;
+        padding-top: 44px;
+    }
+    
+    &__txt-item {
+        display:flex;
+    }
+    
+    &__description {
+        font-size: 20px;
+    }
+    
+    &__icon-pic1 {
+        content:url(../img/radio-1.png);
+        width: 70px;
+        height: 70px;
+        margin-right: 49px;
+        
+    }
+    
+    &__icon-pic2 {
+        content:url(../img/radio-2.png);
+        width: 70px;
+        height: 70px;
+        margin-right: 49px;
+    }
+    
+    &__icon-pic3 {
+        content:url(../img/radio-3.png);
+        height: 70px;
+        width: 70px;
+        margin-right: 49px;
+    }
+    
+    &__txt-section {
+        padding-bottom: 29px;
+    }
+    
+    &__picture {
+        width: auto;
+        height: 500px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:720px) {
+    .about__picture {
+        display: none;
+    }
+    .about__wrapper {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    .about {
+        padding-bottom: 62px;
+        &__icon-pic1, 
+        &__icon-pic2, 
+        &__icon-pic3, 
+        &__icon-pic4 {
+            margin-right: 29px;
+            width: 60px;
+            height: 60px;
+            display:block;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .about {
+        &__txt-item {
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__icon-pic1, 
+        &__icon-pic2, 
+        &__icon-pic3,
+        &__icon-pic4{
+            margin: 0 auto;
+            padding-bottom: 10px;
+            width: auto;
+            height: auto;
+        }
+        &__attention-wrapper {
+            flex-direction: column;
+            padding-top: 30px;
+        }
+        &__attention {
+            text-align: center;
+        }
+        }
+}
+
+@media screen and (min-width:1640px) {
+    .about__title {
+        font-size: 32px;
+    }
+    .about__description {
+        font-size: 30px;
+    }
+    .about__attention {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1960px) {
+    .about__title {
+        font-size: 36px;
+    }
+    .about__description {
+        font-size: 34px;
+    }
+    .about__attention {
+        font-size: 34px;
+    }
+}
