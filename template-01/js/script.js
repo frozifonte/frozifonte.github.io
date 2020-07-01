@@ -35,13 +35,36 @@ function delMobMenu() {
 
 
 // A TIMER
-const countNumber = document.querySelector("#count");
+const minCounter = document.querySelector("#minutes");
+const hoursCounter = document.querySelector("#hours");
+const daysCounter = document.querySelector("#days");
 
-setInterval(counter, 60000);
+const countMin = setInterval(counter, 60000);
 
 function counter() {
-    countNumber.textContent -= 1;
-}
+    if (minCounter.textContent > 0) {
+        minCounter.textContent -= 1;
+    }
+    else {
+       clearInterval(countMin);
+       const countHour = setInterval(function() {
+           if (hoursCounter.textContent > 0) {
+        hoursCounter.textContent -= 1;
+        }
+        else {
+            clearInterval(countHour);
+            const countDay = setInterval(function() {
+                if (daysCounter.textContent > 0) {
+                    daysCounter.textContent -= 1;
+                }
+                else {
+                    clearInterval(countDay);
+                }
+            }, 3600000);
+    }
+       }, 86400000); 
+    }
+};
 
 // MODAL WINDOW
 const btnOpenModal = document.querySelectorAll(".button");
@@ -65,46 +88,4 @@ window.addEventListener("load", function () {
        modal.style.display = "none";
    } 
 });
-//INPUTS CHECK
 
-const input = document.querySelectorAll(".form-box__item");
-const btnForm = document.querySelector(".button-form");
-const form = document.querySelector(".form-box__form");
-const errors = {
-    empties: "Поля не могут оставаться пустыми",
-    empty: "Поле не может оставаться пустым",
-};
-
-btnForm.addEventListener("click", checkForm);
-
-function checkForm(event) {
-    event.preventDefault();
-    for (let i = 0, y = input.length; i < y; i++) {
-        if (input[0].value === "" && input[1].value === "") {
-            let p = document.createElement("p");
-            p.textContent = errors.empties;
-            p.classList.add("error");
-            btnForm.before(p);
-            setInterval(() => {
-                p.remove();
-            }, 3000);
-            return false;
-       }
-        else if (input[0].value === "" || input[1].value === "") {
-            let p = document.createElement("p");
-            p.textContent = errors.empty;
-            p.classList.add("error");
-            btnForm.before(p);
-            setInterval(() => {
-                p.remove();
-            }, 3000);
-            return false;
-        }
-        
-        else {
-            modal.style.display = "none";
-            form.reset();
-        }
-        
-    }
-}
