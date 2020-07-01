@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <title>Pantoflex</title>
@@ -40,7 +41,8 @@
                        <li class="text-box__item">Уменьшает отеки</li>
                    </ul>
                </div>
-               <div class="header__form-box form-box">
+               <div class="header__outer-wrapper">
+                   <div class="header__form-box form-box">
                 <div class="header__form-box-wrapper">
                     <h2 class="form-box__title">Закажите сейчас по акции</h2>
                     <div class="form-box__prices">
@@ -57,21 +59,22 @@
                             <h3 class="counter__title subtitle">Осталось до конца акции</h3>
                             <div class="counter__date-boxes">
                                 <div class="counter__date-box">
-                                    <p class="counter__number">14</p>
+                                    <p id="days" class="counter__number">14</p>
                                     <span class="counter__text">Дни</span>
                                 </div>
                                 <div class="counter__date-box">
-                                    <p class="counter__number">23</p>
+                                    <p id="hours" class="counter__number">23</p>
                                     <span class="counter__text">Часы</span>
                                 </div>
                                 <div class="counter__date-box">
-                                    <p id="count" class="counter__number">45</p>
+                                    <p id="minutes" class="counter__number">45</p>
                                     <span class="counter__text">Мин</span>
                                 </div>
                             </div>
                         </div>
                         <button class="form-box__button button"><b>Заказать</b><br> со скидкой</button>
                 </div>
+               </div>
                </div>
             </div>
           
@@ -173,8 +176,8 @@
                        </div>
                     </div>
                     <form method="POST" action="#" class="form-box__form">
-                        <input type="text" name="name" class="form-box__item" placeholder="Имя" maxlength="15"><br>
-                        <input type="tel" name="tel" class="form-box__item" placeholder="Телефон" maxlength="15">
+                        <input type="text" name="name" class="form-box__item" placeholder="Имя" maxlength="15" required><br>
+                        <input type="tel" name="tel" class="form-box__item" placeholder="Телефон" maxlength="15" required>
                         <button class="form-box__button button button-form"><b>Заказать</b><br> со скидкой</button>
                     </form>
                 </div>
