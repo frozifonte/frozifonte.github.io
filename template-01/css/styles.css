@@ -17,7 +17,9 @@
   .about__icon-pic4 {
     border-top: 5px solid #ccc;
     padding-top: 10px;
-    content: url(../img/attention.png);
+    background-image: url(../img/attention.png);
+    background-repeat:no-repeat;
+    flex: 0 0 auto;
     margin-right: 49px;
     width: 70px;
     height: 70px; }
@@ -32,25 +34,32 @@
   .about__description {
     font-size: 20px; }
   .about__icon-pic1 {
-    content: url(../img/radio-1.png);
-    width: 70px;
-    height: 70px;
+    background-image: url(../img/radio-1.png);
+    background-repeat:no-repeat;
+    flex:0 0 auto;
+    width: 78px;
+    height: 78px;
     margin-right: 49px; }
   .about__icon-pic2 {
-    content: url(../img/radio-2.png);
-    width: 70px;
-    height: 70px;
+    background-image: url(../img/radio-2.png);
+    background-repeat:no-repeat;
+    flex: 0 0 auto;
+    width: 78px;
+    height: 78px;
     margin-right: 49px; }
   .about__icon-pic3 {
-    content: url(../img/radio-3.png);
-    height: 70px;
-    width: 70px;
+    background-image: url(../img/radio-3.png);
+    background-repeat:no-repeat;
+    flex: 0 0 auto;
+    height: 78px;
+    width: 78px;
     margin-right: 49px; }
   .about__txt-section {
     padding-bottom: 29px; }
   .about__picture {
     width: auto;
-    height: 500px; }
+    height: 500px; 
+    flex:0 0 auto;}
 
 @media screen and (max-width: 720px) {
   .about__picture {
@@ -729,7 +738,9 @@ header {
   font-size: 18px;
   font-weight: 400;
   font-family: "Roboto", sans-serif; }
-
+.link:hover {
+  color:#000;
+  border-bottom:1.3px solid #000;}
 .nav-menu {
   display: none;
   width: 90%;
