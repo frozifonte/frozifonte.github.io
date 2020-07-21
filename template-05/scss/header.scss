@@ -1,0 +1,118 @@
+
+.header {
+    margin-top: 30px;
+    background: url(../img/background.png) right center no-repeat;
+    background-size: contain;
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 50%;
+    }
+    &__title {
+        max-width: 657px;
+    }
+    &__subtitle {
+        max-width: 324px;
+        margin-bottom: 42px;
+        margin-top: 32px;
+    }
+    &__item img {
+        max-height: 100%;
+        height: auto;
+        margin-top: 10%;
+        flex: 0 0 auto;
+    }
+    &__form {
+        max-width: 450px;
+    }
+    &__form input{
+        color: #616161;
+        font-family: "SFUI Display";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        padding: 10px 30px;
+        background-color: #f8f8f8;
+        border:1px solid #e1e1e1;
+        outline:0;
+    }
+    &__form input:focus {
+        border:1px solid #fb973b;
+    }
+    &__form button {
+        background-color: #fb973b;
+        color: #ffffff;
+        font-family: "SFUI Display";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        border:0;
+        outline:0;
+        cursor:pointer;
+        text-align: center;
+        padding: 10px 30px;
+        margin-left: -3%;
+        &:hover {
+            background-color: #F9912F;
+        }
+    }
+}
+
+@media screen and (min-width:1640px) {
+    .header {
+        &__subtitle {
+            font-size: 27px;
+        }
+        &__form {
+            max-width: 470px;
+        }
+        &__form input, 
+        &__form button {
+            font-size: 22px;
+        }
+        
+    }
+}
+@media screen and (max-width:910px) {
+    .header {
+        &__item {
+            width: 100%;
+        }
+        &__subtitle {
+            max-width: 540px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+        
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        background:none;
+        &__title,
+        &__subtitle,
+        &__form{
+            max-width: 100%;
+            width: 100%;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        &__form button {
+            margin-left: 0;
+            width: 100%;
+        }
+        &__form input {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+}

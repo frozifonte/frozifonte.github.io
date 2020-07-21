@@ -1,0 +1,120 @@
+.about {
+    margin-top: 132px;
+    &__wrapper {
+        max-width:809px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__title {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 100%;
+        line-height: 72px;
+        
+    }
+    &__subtitle {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 506px;
+    }
+    &__items {
+        margin-top: 42px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 50%;
+    }
+    &__item img {
+        max-width: 100%;
+        height: auto;
+    }
+    &__list {
+        max-width: 386px;
+    }
+    &__list span {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 20px;
+        line-height: 20px;
+        height: 20px;
+        color:#fcbc80;
+        border:1px solid #fcbc80;
+        position: relative;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    &__list:not(:first-child) span:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        background-color: #fcbc80;
+        left: 50%;
+        bottom: 50%;
+        transform:translate(50%,-50%);
+    }
+    &__list span:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: #fcbc80;
+        position: absolute;
+        left: 50%;
+    }
+    
+    &-list__description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #141419;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1640px) {
+    .about {
+        &__item img {
+            min-width: 100%;
+        }
+        &__list span {
+            font-size: 24px;
+            height: 25px;
+            width: 25px;
+        }
+        &-list__description {
+            font-size: 22px;
+        }
+       
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    .about {
+        margin-top: 60px;
+        &__items {
+            flex-direction: column;
+        }
+        &__list {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__item {
+           text-align: center;
+            width: 100%;
+        }
+        
+        &__subtitle {
+            text-align: left;
+        }
+        
+    }
+}
