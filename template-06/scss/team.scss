@@ -1,0 +1,47 @@
+.team {
+    padding-bottom: 101px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    &__item {
+        background-color: #fce38a;
+        padding: 12px 10px;
+        border-right: 1px solid #e09a7a;
+        font-size: 30px;
+        color: #f38181;
+        text-decoration: none;
+        line-height: 1;
+        width: 50px;
+        height: 50px;
+        transition: background .1s linear, color .1s linear;
+    }
+    &__item:last-child {
+        border-right: 0;
+    }
+    &__item:hover {
+        color: #fff;
+        background-color: #f38181;
+    }
+}
+
+.cards {
+    &__info {
+        text-align: center;
+        margin-top: 15px;
+    }
+    &__name {
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-transform: uppercase;                                                
+    }
+    &__position {
+        margin-top: 0;
+        color: #999999;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;                                                
+    }
+}

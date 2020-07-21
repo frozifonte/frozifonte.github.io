@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.6;
+  color:#333;
+  overflow-x: hidden;
+}
+.container {
+  max-width:1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  color:#fff;
+  display: inline-block;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.suptitle {
+  color:#333;
+  font-family: KaushanScript;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  font-size: 30px;
+}
+.title:after {
+  content:'';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+
+  margin: 40px auto 80px;
+
+}
+.description {
+  font-family: Montserrat;
+  font-size: 15px;
+  color:#999;
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;
+}
+.txt-wrapper {
+  max-width: 954px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding-top: 110px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 0;
+  &__inner {
+    background-color: #95e1d3;
+    position: relative;
+    }
+  &__item {
+    max-width: 360px;
+    padding-right: 15px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__item:hover &__text-hover {
+    cursor:pointer;
+    opacity: 1;
+  }
+  &__item:hover &__img {
+    transform: translate3d(-10px, -10px, 0);
+  }
+  &__item:hover &__img img {
+    opacity:.1;
+    cursor: pointer;
+  }
+  &__img {
+    transition: transform .2s linear;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  }
+  &__img img {
+    display: block;
+    transition: opacity .1s linear;
+    flex:0 0 auto;
+    max-width: 100%;
+  }
+  &__text-hover {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+}
+
+.link-title:hover {
+    color:#999;
+}
+
+@media screen and (max-width:770px) {
+    .cards {
+        display: block;
+        &__item {
+            margin: 0 auto 15px; 
+            padding-right: 0;
+        }
+        &__item:last-child {
+            margin: 0 auto; 
+        }
+    }
+    .title {
+        font-size: 25px;
+        &:after {
+            margin: 20px auto 60px;
+        }
+    }
+    .suptitle {
+        font-size: 20px;
+    }
+    .txt-wrapper {
+        padding-top: 55px;
+    }
+}
+@media screen and (max-width:500px) {
+    .txt-wrapper {
+        padding-top: 30px;
+    }
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: KaushanScript;
+  src: url(../fonts/KaushanScript-Regular.ttf);
+}

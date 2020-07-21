@@ -1,0 +1,72 @@
+.feedback {
+  background-color: #f8f8f8;
+  position: relative;
+  &__item {
+    display: flex;
+    min-width:0;
+    padding: 70px 0;
+  }
+  &__text {
+    overflow: hidden;
+  }
+  &__image {
+    margin-right: 61px;
+    flex:0 0 auto;
+  }
+  &__description {
+    max-width: 767px;
+    height: auto;
+    color: #999999;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  &__author {
+    max-width: 82px;
+    height: auto;
+    color: #333333;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 50px;
+    position: relative;
+  }
+  &__author:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+  }
+}
+.slider {
+  min-width: 0;
+}
+.slick-list {
+  overflow:hidden;
+}
+.slick-track {
+  display: flex;
+}
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  font-size: 0;
+  width: 32px;
+  height: 52px;
+  border: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/arrow_left.svg) 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/arrow_right.svg) 0 0 / 100% no-repeat;
+}

@@ -1,0 +1,39 @@
+.design {
+  background:url(../img/2-layers.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.devices {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    & img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__img--ios {
+        position: absolute;
+        top: 30%;
+        left: 60%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:610px) {
+    .devices {
+        max-width:320px;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+        .devices__img--ios {
+            display:none;
+        }
+    }
+    
+}

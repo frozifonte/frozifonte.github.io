@@ -1,0 +1,34 @@
+.brands {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:738px) {
+    .brands {
+        &__items {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__item {
+            width: 33.333%;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .brands {
+        &__items {
+            width: 100%;
+            text-align: center;
+        }
+        &__item {
+            width: 50%;
+        }
+    }
+}

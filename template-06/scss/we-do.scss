@@ -1,0 +1,104 @@
+.we-do {
+    &__txt-wrapper {
+        padding: 80px 0;
+    }
+    &__items {
+        display: flex;
+    }
+    &__item {
+        width: 50%;
+    }
+    &__item img {
+        max-width:100%;
+    }
+    &__item:first-child {
+        margin-right: 30px;
+    }
+}
+
+.accordion {
+    &__item {
+        border: 1px solid #e5e5e5;
+        margin-bottom: 10px;
+    }
+    &__header {
+        color: #333333;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 15px 20px 15px 60px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
+        line-height: 1;
+    }
+    &__header:after {
+        content:'';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-top:3px solid #ccc;
+        border-right: 3px solid #ccc;
+        top: 20%;
+        right: 20px;
+        z-index: 1;
+        transform: translateY(-20%);
+        transform: rotate(135deg);
+    }
+    &__header:hover {
+        cursor:pointer;
+    }
+    &__icon {
+       position: absolute;
+        top: 10%;
+        left: 20px;
+        transform: translateY(5%);
+        z-index: 1;
+    }
+    &__content {
+        color: #999999;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px;
+        line-height: 24px;
+        height: 181px;
+        display: none;
+        overflow-x: auto;
+    }
+    &__item.active
+    &__content {
+        display: block;
+    }
+    &__item.active
+    &__header:after {
+        top: 35%;
+        transform: translateY(-35%);
+        transform: rotate(-45deg);
+    }
+    
+}
+
+@media screen and (max-width:670px) {
+    .we-do {
+        &__items {
+            flex-direction: column;
+        }
+        &__item {
+            width: 70%;
+            margin: 0 auto;
+        }
+        &__item:first-child {
+            margin: 0 auto 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width:567px) {
+    .we-do {
+        &__item {
+            width: 90%;
+        }
+    }
+}

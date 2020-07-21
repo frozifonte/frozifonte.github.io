@@ -1,0 +1,17 @@
+.about {
+  padding-bottom: 110px;
+}
+
+
+@media screen and (max-width:770px) {
+    .about {
+        padding-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .about {
+        padding-bottom: 40px;
+    }
+}

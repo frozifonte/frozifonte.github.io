@@ -1,0 +1,153 @@
+header {
+  max-width: 100%;
+  padding-bottom: 400px;
+  background: url(../img/bg__header.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+}
+.header {
+  &__logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &-title__inner {
+    max-width: 802px;
+    height: 248px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top:-50%;
+    transform: translateY(50%);
+    
+  }
+  &__suptitle {
+    color: #ffffff;
+    font-family: KaushanScript;
+    font-size: 72px;
+    font-weight: 400;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 71px auto;
+    background-color: #fff;
+
+  }
+
+  &__btn {
+    text-decoration: none;
+    border: 3px solid #ffffff;
+    transition: background .5s linear, color .5s linear;
+    margin-bottom: 127px;
+    padding: 15px;
+  }
+
+  &__btn:hover {
+    color:#333;
+    background-color: #fff;
+  }
+
+
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 100px;
+
+  &__item {
+    width: 23%;
+    color: #fff;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-top: 3px solid #fff;
+    position: relative;
+    top: 400px;
+    opacity:.5;
+    margin: 20px 0;
+  }
+  &__item.active {
+    opacity:1;
+  }
+  &__item.active:before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 70px;
+    top: -3px;
+    left: 0;
+    background-color: #f38181;
+  }
+  &__num {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        &__suptitle {
+            font-size: 64px;
+        }
+        &__title {
+            font-size: 130px;
+            line-height: 120px;
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    
+}
+
+@media screen and (max-width:770px) {
+    .header {
+        &__title {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        &__suptitle {
+            font-size: 56px;
+        }
+    }
+}
+@media screen and (max-width:624px) {
+    .progress-bar__txt {
+        display: none;
+    }
+    .progress-bar__item.active:before {
+        width: 50%;
+    }
+}
+@media screen and (max-width:575px) {
+    .header {
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        &__suptitle {
+            font-size: 36px;
+        }
+    }
+    .progress-bar {
+        margin-top: 0;
+    }
+}
+
+
