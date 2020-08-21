@@ -1,0 +1,175 @@
+.header {
+    background: url(../img/bg_header.jpg) center center / cover no-repeat;
+    padding-bottom: 205px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__intro {
+        position: relative;
+        top: 40%;
+        transform: translateY(40%);
+    }
+    &__title {
+        font-size: 50px;
+        color:#fff;
+        line-height: 1;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    &__title span {
+        color:#ff7474;
+    }
+    &__descr {
+        color:#fff;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    &__arrow {
+        margin-top: 50px;
+    }
+    &__arrow > a > img {
+        height: 70px;
+        animation: bounce 2s ease-in-out 1s infinite;
+    }
+    @-webkit-keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(15px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    &__promo {
+        position: relative;
+        top: 65%;
+        transform: translateY(65%);
+    }
+    &__item {
+        position: relative;
+    }
+    &__item:hover &__control {
+        opacity: 1;
+    }
+    &__item:last-child {
+        margin-top: 20px;
+    }
+    &__item:last-child:hover &__control--two {
+        opacity: 1;
+    }
+    &__control.paused{
+        opacity: 1;
+    }
+    &__control--two.paused{
+        opacity: 1;
+    }
+    &__control {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        transform: translate(10px,-5px);
+        display: flex;
+        color:#fff;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+    &__control--two {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        transform: translate(10px,-5px);
+        display: flex;
+        color:#fff;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+    &__play {
+        display: block;
+        background-image:url('../img/play.svg');
+        width: 35px;
+        height: 35px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__play--two {
+        display: block;
+        background-image:url('../img/play.svg');
+        width: 35px;
+        height: 35px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__caption {
+        margin-left: 10px;
+    }
+    &__subtitle {
+        font-size: 20px;
+    }
+    &__subdescr {
+        font-size: 15px;
+        color:#eee;
+    }
+}
+
+
+@media screen and (max-width:795px) {
+    .header {
+        &__items {
+            display: block;
+        }
+        &__arrow {
+            display: none;
+        }
+        &__intro {
+            top:50%;
+            transform: translateY(50%);
+        }
+        &__promo {
+            top: 55%;
+            transform: translateY(55%);
+
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__subdescr {
+            font-size: 14px;
+        }
+        &__item .videoTrack, &__item .videoTrack--two {
+            width: 100%;
+        }
+        &__promo {
+            top: 43%;
+            transform: translateY(43%);
+        }
+         &__intro {
+            top:40%;
+            transform: translateY(40%);
+        }
+        &__control, &__control--two {
+            left: 10px;
+            transform: translate(10px, -10px);
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .header {
+        &__control, &__control--two {
+            left: 10px;
+            transform: translate(10px, -5px);
+        }
+    }
+}

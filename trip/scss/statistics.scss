@@ -1,0 +1,155 @@
+.statistics {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+    background: url(../img/mountain-lg.jpg) center center / cover no-repeat;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item:first-child {
+        display: flex;
+        width: 65%;
+    }
+    &__item:last-child {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__description {
+        max-width: 350px;
+        margin-right: 20px;
+    }
+    &__play {
+        cursor: pointer;
+        display: block;
+        background:url('../img/play-pink.svg') no-repeat;
+        width: 60px;
+        height: 60px;
+    }
+    &__play-text {
+        position: relative;
+        left:26%;
+        bottom:20%;
+        transform: translate(26%, -20%);
+        z-index: 2;
+    }
+    &__numbs {
+        margin-top: 100px;
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__count {
+        color:#ff7474;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: PlayfairDisplay, sans-serif;
+    }
+    &__numb-text {
+        max-width: 150px;
+    }
+}
+
+.video-about {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    
+    & video {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 720px;
+        z-index: 10;
+    }
+}
+@media screen and (max-width:574px) {
+    .video-about {
+        & video {
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width:960px) {
+    .statistics {
+        &__numbs {
+            width: 100%;
+            margin-top: 60px;
+        }
+       
+    }
+}
+
+@media screen and (max-width:654px) {
+    .statistics {
+        &__numbs {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            
+        }
+        &__numb {
+            text-align: center;
+            &-text {
+                margin: 0 auto;
+            }
+        }
+         &__items {
+            display: block;
+        }
+        &__item:last-child {
+            text-align: center;
+            margin-top: 30px;
+        }
+        &__play-text {
+            transform: translate(0,0);
+            left: 0;
+            bottom: 0;
+        }
+        &__play {
+            margin: 0 auto;
+        }
+        &__item:first-child {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:404px) {
+    .statistics {
+        padding-top: 50px;
+        background: url(../img/mountain-lg.jpg) center center / cover no-repeat;
+        &__item:first-child {
+           display: block;
+        }
+        &__description:first-child {
+            margin-bottom: 10px;
+        }
+        &__numbs {
+            margin-top: 30px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            
+        }
+        &__numb {
+            text-align: center;
+            &-text {
+                margin: 0 auto;
+            }
+        }
+    }
+}

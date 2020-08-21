@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+      <nav class="nav">
+             <div class="nav__wrapper">
+                 <span class="nav__logo">Pora Trip</span>
+               <ul class="nav__items">
+                       <li class="nav__item">
+                           <a href="javascript:void(0);" class="nav__link">Наши туры</a>
+                       </li>
+                       <li class="nav__item">
+                           <a href="javascript:void(0);" class="nav__link">Отзывы</a>
+                       </li>
+                       <li class="nav__item">
+                           <a href="javascript:void(0);" class="nav__link">История путешествий</a>
+                       </li>
+                       <li class="nav__item">
+                           <a href="javascript:void(0);" class="nav__link">Контакты</a>
+                       </li>
+                   </ul>
+                   <ul class="nav__items--addition">
+                       <li class="nav__item">
+                           <span class="nav__toggle active">RUS</span>
+                       </li>
+                       <li class="nav__item">
+                           <span class="nav__toggle">EN</span>
+                       </li>
+                   </ul>
+               <button class="nav__menu">&#9776;</button>
+             </div>
+           </nav>
+       <div class="container">
+           
+           <div class="header__items" >
+               <div class="header__intro" >
+                   <h1 class="header__title">Пора вырваться из душного мегаполиса<span class="dot">.</span></h1>
+                   <p class="header__descr">Отдых по всему миру, который вы заслужили</p>
+                   <a href="#info" class="header__btn button">Подробнее</a>
+                   <div  class="header__arrow">
+                       <a href="#statistics"><img src="img/arrow.svg" alt=""></a>
+                   </div>
+               </div>
+               <div class="header__promo">
+                   <div class="header__item">
+                       <video class="videoTrack"  src="vid/1.mp4" width="350" loop></video>
+                       <div class="header__control paused">
+                           <span class="header__play">
+                           </span>
+                           <div class="header__caption">
+                               <h5 class="header__subtitle">20км от Геленджика</h5>
+                               <p class="header__subdescr">Чудесное скопление скал</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="header__item">
+                       <video class="videoTrack--two"  src="vid/2.mp4" width="350" loop></video>
+                       <div class="header__control--two paused">
+                           <span class="header__play--two">
+                           </span>
+                           <div class="header__caption">
+                               <h5 class="header__subtitle">Северное сияние</h5>
+                               <p class="header__subdescr">2 недели в Финляндии</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </header>
+    <main>
+       <div class="video-about">
+            <video class="videoTrackThree"  src="vid/3.mp4" width="720" loop></video>
+        </div>
+        <section class="statistics" id="statistics"> 
+            <div class="container">
+                <h2 class="statistics__title title">Pora Trip<span class="dot">.</span></h2>
+                <div class="statistics__items">
+                    <div class="statistics__item">
+                        <p class="statistics__description description">С любовью и заботой организуем для вас долгожданный отдых в самых интересных уголках планеты. В далеком 2009 мы с женой впервые организовали тур для наших друзей.</p>
+                        <p class="statistics__description description">С того дня это стало дело всей жизни. Сейчас вместе с нами в команде уже 27, а количество путешественников, которым мы помогли уже перевалило за четыре тысячи.</p>
+                    </div>
+                    <div class="statistics__item">
+                        <a class="statistics__play">
+                        </a>
+                        <p class="statistics__play-text description">Наша история <br> за 90 секунд</p>
+                    </div>
+                </div>
+                <div class="statistics__numbs">
+                    <div class="statistics__numb">
+                        <span class="statistics__count">4670</span>
+                        <p class="statistics__numb-text description">Путешественников уже вместе</p>
+                    </div>
+                    <div class="statistics__numb">
+                        <span class="statistics__count">65%</span>
+                        <p class="statistics__numb-text description">Наших клиентов приходит повторно</p>
+                    </div>
+                    <div class="statistics__numb">
+                        <span class="statistics__count">148</span>
+                        <p class="statistics__numb-text description">Необычных локаций для путешествий</p>
+                    </div>
+                    <div class="statistics__numb">
+                        <span class="statistics__count">11</span>
+                        <p class="statistics__numb-text description">Лет дарим вам новые эмоции</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__items">
+                    <div class="gallery__item">
+                        <a data-fancybox="gallery" href="img/1.png">
+                            <img src="img/1.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/2.png">
+                            <img src="img/2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__item">
+                        <a data-fancybox="gallery" href="img/3.png">
+                            <img src="img/3.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/4.png">
+                            <img src="img/4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__item">
+                    <div class="gallery__text">
+                        <h2 class="gallery__title title">Галерея<span class="dot">.</span></h2>
+                        <p class="gallery__description description">В каждом путешествии с вами будет фотограф, который поможет всё запечатлить</p>
+                        <span class="gallery__txt"><i class="fab fa-instagram"></i> Больше фотографий смотрите в нашем <a href="https://instagram.com" class="gallery__link" target="_blank">Instagram</a></span>
+                    </div>
+                        <a data-fancybox="gallery" href="img/5.png">
+                            <img src="img/5.png" alt="">
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="info" >
+                <div class="info__items">
+                    <div class="info__item">
+                       <div class="info__img">
+                         <img src="img/kar_13.jpg" alt="">
+                      <div class="info__overview">
+                            <span class="info__date">20/04</span>
+                            <h4 class="info__name">Озеро в Микли</h4>
+                            <span class="info__about">Сердце Карелии</span>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    <div class="info__item" id="info">
+                        <h2 class="info__title title">Большой выезд на хутор Микли<span class="dot">.</span></h2>
+                        <p class="info__description description">Оставьте заявку и мы перезвоним вам в течение трёх минут</p>
+                        <form action="#" method="get">
+                            <input class="info__input" type="tel" placeholder="+7 (___) ___-__-__" maxlength="22" required>
+                            <button class="info__button button">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <a href="#header" class="scroll-top">&#8679;</a>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__col">
+                        <p class="footer__logo">Pora Trip</p>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__list">
+                            <li><a href="javascript:void(0);" class="footer__link">Вакансии</a></li>
+                            <li><a href="javascript:void(0);" class="footer__link">Все туры</a></li>
+                            <li><a href="javascript:void(0);" class="footer__link">Гарантии</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <a href="javascript:void(0);" class="footer__link--important">Политика конфиденциальности</a>
+                    <a href="javascript:void(0);" class="footer__link--important">Соглашение на обработку персональных данных</a>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <a href="https://www.behance.net/gallery/93869867/Landing-Page?tracking_source=search_projects_recommended%7Clanding%20page%20template" class="footer__link--copy" target="_blank">Дизайн</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

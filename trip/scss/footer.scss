@@ -1,0 +1,125 @@
+.footer {
+    background: url(../img/mountain-sm.jpg) center center / cover no-repeat;
+    margin-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item:last-child {
+        width: 65%;
+    }
+    &__col:last-child a {
+        color:#333;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    &__col:last-child a:hover {
+        color:#ff7474;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    &__logo {
+        font-family: KaushanScript, sans-serif;
+        color: #ff7474;
+        font-size: 30px;
+        letter-spacing: .5px;
+        margin-bottom: 65px;
+        margin-top: -12px;
+    }
+    &__link {
+        color:#333;
+        font-size:18px;
+        &--important {
+            color:#333;
+            font-size: 14px;
+        }
+    }
+    &__link:hover, &__link--important:hover {
+        text-decoration: underline;
+    }
+    &__copy {
+        margin-top: 30px;
+        text-align: center;
+    }
+    &__link--copy {
+        color: #ff7474;
+        font-size: 14px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    
+}
+@media screen and (min-width:1500px) {
+    .footer {
+        &__link--important {
+            font-size: 17px;
+        }
+        &__item:last-child {
+            width: 70%;
+        }
+        &__link--copy {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width:964px) {
+    .footer {
+        &__item:last-child {
+            width: 70%;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:886px) {
+    .footer {
+        &__item:last-child {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:658px) {
+    .footer {
+        &__item:last-child {
+            flex-direction: column;
+        }
+        &__list {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:436px) {
+    .footer {
+        overflow-x: hidden;
+        &__item {
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 15px;
+        }
+        &__col:last-child {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__list a {
+            margin-left: 0;
+        }
+    }
+}
