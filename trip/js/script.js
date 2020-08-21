@@ -1,4 +1,12 @@
 "use strict";
+// lazyload
+
+const lazyLoad = document.querySelector(".lazyload");
+window.addEventListener("load", function() {
+   lazyLoad.style.display = "none"; 
+    document.body.style.overflowY = "scroll";
+});
+
 // video constrols
 
 const video = document.querySelector(".videoTrack"),
